@@ -1,0 +1,72 @@
+@media only screen and (max-width: 450px) {
+    body {
+    	width: 100%;
+    }
+
+    #servicios {
+	  flex-direction: column;
+	}
+
+	#servicios article {
+	  width: 100%
+	}
+
+	#tituloservicios {
+		font-size: 20px;
+	}
+
+	#equipo {
+	  flex-direction: column;
+	  text-align: center;
+	}
+
+	#equipo article {
+	  width: 100%
+	}
+
+	#insta {
+		display: none;
+	}
+
+	#insta1 {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-content: center;
+	}
+
+	#insta1 article {
+		width: 50%;
+		padding-bottom: 20px;
+	}
+
+	#fondoimg {
+		display: none;
+	}
+
+	#insta1 article {
+		width: 45%;
+		overflow: hidden;
+	}
+
+	#fooizq {
+	  width: 70%;
+	}
+
+	footer {
+		padding-top: 16%;
+		border: 1px red solid;
+	 	width: 100%;
+	}
+
+	hr {
+	  width: 20%;
+	}
+
+	#vistadesktop {
+		display: none;
+	}
+
+	#formulariovista  {
+		width: 100%;
+	}

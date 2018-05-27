@@ -1,0 +1,147 @@
+#letra {
+  font-family: 'Pacifico', cursive;
+  color: orange;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#izq {
+  float: left;
+  margin-left: 60px;
+}
+
+#der {
+  float: right;
+  margin-right: 60px;
+}
+
+.btn {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Meedori Sans';
+}
+
+.btn:before{
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transition: .1s;
+}
+
+.btn:hover:before{
+  width: 100%;
+  left: 0;
+}
+
+#tituloservicios {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 36px;
+  letter-spacing: 5px;
+}
+
+#servicios {
+  display: flex;
+  width: 100%;
+  border: 1px blue solid;
+  justify-content: space-around;
+}
+
+#servicios article {
+  width: 25%;
+  border: 1px blue solid;
+  padding: 10px;
+}
+
+article .iconoservicio {
+  width: 100%;
+  border: 1px blue solid;
+  top: 0;
+  left: 0;
+  margin: 20%;
+}
+
+#clientes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#clientes article {
+  width: 120px;
+  height: 100px;
+  overflow: hidden;
+}
+
+article img {
+  width: 100%;
+  height: 100%;
+  border: 1px red solid;
+  overflow: hidden;
+}
+
+#consultoria {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#consultoria article {
+  width: 40%;
+}
+
+#proyecto {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+#proyecto article {
+  width: 40%;
+}
+
+input, textarea {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+input {
+  height: 30px;
+}
+
+textarea {
+  height: 130px;
+  resize: none;
+}
+
+#formulario {
+  background-color: gray;
+  color: white;
+  display: flex;
+  width: 100%;
+}
+
+#formulario article {
+  width: 50%;
+  margin: 10px 50px;
+}
+
+
+
