@@ -180,15 +180,15 @@
       <article >
         <form action="">
 
-          <input type="text" placeholder="Su Nombre *" class="estiloinput"> <br><br>
+          <input type="text" placeholder="Nombre *" class="estiloinput"> <br><br>
 
-          <input type="email" placeholder="Su Correo *"> <br><br>
+          <input type="email" placeholder="Correo *" class="estiloinput"> <br><br>
 
-          <input type="tel" placeholder="Su Telefono *" > <br><br>
+          <input type="tel" placeholder="Telefono *" class="estiloinput"> <br><br>
         
-          <textarea placeholder="Su Comentario *" ></textarea><br><br>
+          <textarea placeholder="Comentario *" class="estiloinput"></textarea><br><br>
 
-          <center> <button>Enviar</button> </center>
+          <center> <button id="btnenviar">Enviar</button> </center>
         
         </form> <br> <br>
     </article>    
@@ -199,13 +199,13 @@
   
 <footer>
   <section id="ultima">
-    <article>
+    <article id="infofooter">
       <p><i class="fas fa-home"></i> Calle X por Y y Z</p>
       <p><i class="far fa-clock"></i> L - V 7:00 AM 11:00 PM</p>
     </article>
 
-    <article id="derechos">
-      <p>© JN SOLHE | All right reserved</p>
+    <article>
+      
     </article>
 
     <article>
@@ -213,10 +213,14 @@
       <i class="fab fa-linkedin-in icono"></i>
       <i class="fab fa-twitter icono"></i>
 
-      <input type="text" placeholder="Usuario">
-      <input type="text" placeholder="Contraseña">
-      <a href="">Entrar</a>     
+      <input type="text" id="logininpit" placeholder="Usuario">
+      <input type="text" id="logininpit" placeholder="Contraseña"> <br>
+      <a href="" id="btnloguin">Entrar</a>     
     </article>
+  </section>
+
+  <section id="derechos">
+    <p>© JN SOLHE | All right reserved</p>
   </section>
   
 </footer>
@@ -239,10 +243,10 @@ $(window).scroll(function() {
 <script>
 $(document).ready(function(){
   $(".botoncon").click(function(){
-    $("#googlemaps").show();
-    $("#contacto").show();
-    $("#fondos").show();
-    $(".botoncon").hide(); 
+    $("#googlemaps").show(100, "linear");
+    $("#contacto").show(100, "linear");
+    $("#fondos").show(100, "linear");
+    $(".botoncon").hide(100, "linear"); 
     });
   });
 </script>
@@ -263,8 +267,7 @@ function showGoogleMaps() {
 
     var mapOptions = {
         zoom: 16, // initialize zoom level - the max value is 21
-        streetViewControl: false, // hide the yellow Street View pegman
-        scaleControl: true, // allow users to zoom the Google Map
+        scaleControl: false, // allow users to zoom the Google Map
 
         styles: [
         {

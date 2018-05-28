@@ -94,6 +94,10 @@ ul a{
     -webkit-transition: width .5s, height .5s, margin-right .5s, margin-top .5s;
 }
 
+#infofooter {
+    padding-top: 50px;
+}
+
 #ultima {
     display: flex;
     width: 100%;
@@ -115,8 +119,36 @@ ul a{
 }
 
 #derechos {
-    padding-top: 60px;
     font-size: 13px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Hind';
+}
+
+#logininpit {
+    width: 80%;
+    height: 20px;
+    font-size: 14px;
+    border-radius: 1px;
+}
+
+#btnenviar {
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    border: none;
+    width: 80px;
+    height: 40px;
+}
+
+#btnloguin {
+    padding: 0px 10px;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    border: none;
 }
 
 footer {
