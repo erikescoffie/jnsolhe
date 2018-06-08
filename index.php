@@ -1,3 +1,10 @@
+<?php
+	session_start();
+	include 'conectar.php';
+	if(isset($_SESSION['correo'])){
+	echo '<script> window.location="verProyectos.php"; </script>';
+	}
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -210,7 +217,7 @@
   </div>
 
 
-  <footer class="fadein">
+  <footer class="">
     <section id="ultima">
       <article id="infofooter">
         <p>
@@ -228,10 +235,12 @@
         <i class="fab fa-linkedin-in icono"></i>
         <i class="fab fa-twitter icono"></i>
 
-        <input type="text" id="logininpit" placeholder="Usuario">
-        <input type="text" id="logininpit" placeholder="Contraseña">
+        <form method="POST" action="validar.php">
+          <input type="text" name="correo" id="logininpit" placeholder="Usuario"> <br> <br>
+          <input type="password" name="contrasenia" id="logininpit" placeholder="Correo"> <br> <br>
+          <input id="btnloguin" type="submit" name="enviar" value="Entrar" size="0">
+        </form>
         <br>
-        <a href="" id="btnloguin">Entrar</a>
       </article>
     </section>
 
