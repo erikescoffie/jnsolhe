@@ -21,167 +21,112 @@ $(document).ready(function () {
         }
     });
     $("#services").click(function () {
-
+        $('.servicios').removeClass('hideContent');
         var styleCss = $('#banner').css('display');
-        //alert(flag);
-        $("#banner").fadeOut(2000);
-        $(".client").fadeOut(2000);
-        $(".consult").fadeOut(2000);
-        $(".project").fadeOut(2000);
-        $(".contact").fadeOut(2000);
 
-        
-        $(".servicios").fadeIn(3000);
-        $(".logo").addClass("estilo");
-        $("header").css({ "background-color": "#141414" });
         if (styleCss == "none") {
-            $('#banner').fadeIn(2000);
+            $('.client').addClass('hideContent');
+            $('.consult').addClass('hideContent');
+            $('.project').addClass('hideContent');
+            $('.contact').addClass('hideContent');
+        } else {
+            $('#banner').hide('slow', function() {
+                $(".logo").addClass("estilo");
+                $('.client').addClass('hideContent');
+                $('.consult').addClass('hideContent');
+                $('.project').addClass('hideContent');
+                $('.contact').addClass('hideContent');
+            });
         }
     });
 
     $("#client").click(function () {
+        $('.client').removeClass('hideContent');
 
         var styleCss = $('#banner').css('display');
-        //alert(flag);
-        $("#banner").fadeOut(2000);
-        $(".servicios").fadeOut(2000);
-        $(".consult").fadeOut(2000);
-        $(".project").fadeOut(2000);
-        $(".contact").fadeOut(2000);
-
-        
-        $(".client").fadeIn(3000);
-        $(".logo").addClass("estilo");
-        $("header").css({ "background-color": "#141414" });
         if (styleCss == "none") {
-            $('#banner').fadeIn(2000);
+            $('.servicios').addClass('hideContent');
+            $('.consult').addClass('hideContent');
+            $('.project').addClass('hideContent');
+            $('.contact').addClass('hideContent');
+        } else {
+            $('#banner').hide('slow', function () {
+                $('.logo').addClass('estilo');
+                $('.servicios').addClass('hideContent');
+                $('.consult').addClass('hideContent');
+                $('.project').addClass('hideContent');
+                $('.contact').addClass('hideContent');
+            });            
         }
     });
 
     $("#consult").click(function () {
-
+        $('.consult').removeClass('hideContent');
         var styleCss = $('#banner').css('display');
-        //alert(flag);
-        $("#banner").fadeOut(2000);
-        $(".servicios").fadeOut(2000);
-        $(".client").fadeOut(2000);
-        $(".project").fadeOut(2000);
-        $(".contact").fadeOut(2000);
-
-        
-        $(".consult").fadeIn(3000);
-        $(".logo").addClass("estilo");
-        $("header").css({ "background-color": "#141414" });
         if (styleCss == "none") {
-            $('#banner').fadeIn(2000);
-        }
+            $('.servicios').addClass('hideContent');
+            $('.client').addClass('hideContent');
+            $('.project').addClass('hideContent');
+            $('.contact').addClass('hideContent');
+        } else {
+            $('#banner').hide('slow', function () {
+                $(".logo").addClass("estilo");
+                $('.servicios').addClass('hideContent');
+                $('.client').addClass('hideContent');
+                $('.project').addClass('hideContent');
+                $('.contact').addClass('hideContent');
+            });
+            
+         }
     });
 
     $("#project").click(function () {
-
+        $('.project').removeClass('hideContent');
+        $('.project').fadeIn(500);
         var styleCss = $('#banner').css('display');
-        //alert(flag);
-        $("#banner").fadeOut(2000);
-        $(".servicios").fadeOut(2000);
-        $(".consult").fadeOut(2000);
-        $(".client").fadeOut(2000);
-        $(".contact").fadeOut(2000);
-
         
-        $(".project").fadeIn(3000);
-        $(".logo").addClass("estilo");
-        $("header").css({ "background-color": "#141414" });
         if (styleCss == "none") {
-            $('#banner').fadeIn(2000);
+            $('.servicios').addClass('hideContent');
+            $('.client').addClass('hideContent');
+            $('.contact').addClass('hideContent');
+            $('.consult').addClass('hideContent');
+        } else {
+            $('#banner').hide('slow', function (){
+                $(".logo").addClass("estilo");
+                $('.servicios').addClass('hideContent');
+                $('.client').addClass('hideContent');
+                $('.contact').addClass('hideContent');
+                $('.consult').addClass('hideContent');
+            });
         }
     });
     $("#contact").click(function () {
+        $('.contact').removeClass('hideContent');
 
         var styleCss = $('#banner').css('display');
-        //alert(flag);
-        $("#banner").fadeOut(2000);
-        $(".servicios").fadeOut(2000);
-        $(".consult").fadeOut(2000);
-        $(".project").fadeOut(2000);
-        $(".client").fadeOut(2000);
-
-        
-        $(".project").fadeIn(3000);
-        $(".logo").addClass("estilo");
-        $("header").css({ "background-color": "#141414" });
         if (styleCss == "none") {
-            $('#banner').fadeIn(2000);
+            $('.client').addClass('hideContent');
+            $('.servicios').addClass('hideContent');
+            $('.consult').addClass('hideContent');
+            $('.project').addClass('hideContent');
+        } else {
+            $('#banner').hide('slow', function () {
+                $(".logo").addClass("estilo");
+                $('.client').addClass('hideContent');
+                $('.servicios').addClass('hideContent');
+                $('.consult').addClass('hideContent');
+                $('.project').addClass('hideContent');
+            });
         }
     });
 
     $("#ini").click(function () {
         $("#banner").fadeIn(3000);
-        $(".client").fadeIn(2000);
-        $(".servicios").fadeIn(2000);
-        $(".consult").fadeIn(2000);
-        $(".project").fadeIn(2000);
-        $(".contact").fadeIn(2000);
+        $(".client").removeClass('hideContent');
+        $(".servicios").removeClass('hideContent');
+        $(".consult").removeClass('hideContent');
+        $(".project").removeClass('hideContent');
+        $(".contact").removeClass('hideContent');
     });
 
 });
-/*
-$(document).ready(function () {
-
-    $("#banner").css({ "height": $(window).height() + "px" });
-    var stylCss = $('#banner').css('display');
-    var flag = false;
-    var scroll;
-    
-
-    $(window).scroll(function () {
-        scroll = $(window).scrollTop();
-        var stylCss = $('#banner').css('display');
-        if (scroll > 5) {
-            if (!flag) {
-                $("#logo").css({ "margin-top": "-5px", "width": "50px", "height": "50px" });
-
-                $("header").css({ "background-color": "#4A5050" })
-                flag = true;
-            }
-
-        } else {
-            if (flag && stylCss!="none") {
-                alert(stylCss);
-                $("#logo").css({ "margin-top": "150px", "width": "250px", "height": "250px" });
-
-                $("header").css({ "background-color": "transparent" })
-                flag = false;
-            }
-        }
-
-
-    });
-
-    $(".services").click(function () {
-
-       
-        var styleCss = $('#banner').css('display');
-        $("#banner").fadeOut(3000);
-        if (!flag) {
-            //alert("Value of style display: "+styleCss);
-            $("#logo").css({ "margin-top": "-5px", "width": "50px", "height": "50px" });
-
-            $("header").css({ "background-color": "#4A5050" })
-            flag = true;
-        }
-        $("#tituloservicios").fadeIn(5000);
-        if(styleCss=="none"){
-            $('#banner').fadeIn(2000);
-        }
-    });
-    $(".ini").click(function(){
-        $("#banner").fadeIn(3000);
-        if (flag) {
-            $("#logo").css({ "margin-top": "-5px", "width": "50px", "height": "50px" });
-
-            $("header").css({ "background-color": "#4A5050" })
-            flag = false;
-        }
-    });
-
-});*/

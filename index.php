@@ -5,6 +5,15 @@
 	echo '<script> window.location="verProyectos.php"; </script>';
 	}
 ?>
+  <!-- 
+    Corta y pega el código del slideshow donde lo quieras colocar, esta marcado el principio y el fin del código
+    Si quieres agregar mas imagenes solo copias y pegas código del div.
+    Obviamente tendrás que cambiar la numeracíon y los textos.
+    Preo ya con eso funciona el slideshow.
+    Tu sección de clientes lo volví una galeria. Si quieres que deje de funcionar como galeria, nada más tienes que quitar
+    el script <Portafolio>, Para modificar el Css, es fácil de identificar
+    PAra portafolio es portafolio.css  y para el slideshow es slideshow.css
+  -->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -17,6 +26,8 @@
 
   <link rel="stylesheet" href="css/estilosdos.css" />
   <link rel="stylesheet" href="css/fadeIn.css" />
+  <link rel="stylesheet" href="css/portafolio.css" />
+  <link rel="stylesheet" href="css/slideshow.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <title> JN.SOLHE </title>
   <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
@@ -100,49 +111,105 @@
 
   <section id="tituloservicios" class="fadein client">
     <h1>CLIENTES</h1>
-    <p>texto</p>
+    <p>PORTAFOLIO DE CLIENTES</p>
   </section>
 
-  <section id="clientes" class="fadein client">
-    <article>
-      <img src="imagenes/1.png" alt="">
-    </article>
-    <article>
-      <img src="imagenes/2.png" alt="">
-    </article>
-    <article>
-      <img src="imagenes/3.png" alt="">
-    </article>
-    <article>
-      <img src="imagenes/4.jpg" alt="">
-    </article>
-    <article>
-      <img src="imagenes/1.png" alt="">
-    </article>
-    <article>
-      <img src="imagenes/1.png" alt="">
-    </article>
-  </section>
+  <section id="clientes" class="client fadein">
+    <div class="portafolio" id = "portafolio" style="width:100%;">
+      <div class="row" >
+      <article class="column">
+        <img src="imagenes/1.png" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </article>
+      <article class="column">
+        <img src="imagenes/2.png" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </article>
+      <article class="column">
+        <img src="imagenes/3.png" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </article>
+      <article class="column">
+        <img src="imagenes/4.jpg" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </article>
+      <article class="column">
+        <img src="imagenes/1.png" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </article>
+      <article class="column">
+        <img src="imagenes/1.png" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </article>
+      </div>
 
-  <section id="clientes" class="fadein client">
-    <article>
-      <img src="imagenes/1.jpg" alt="">
-    </article>
-    <article>
-      <img src="imagenes/1.jpg" alt="">
-    </article>
-    <article>
-      <img src="imagenes/1.jpg" alt="">
-    </article>
-    <article>
-      <img src="imagenes/1.jpg" alt="">
-    </article>
-    <article>
-      <img src="imagenes/1.jpg" alt="">
-    </article>
-    <article>
-      <img src="imagenes/1.jpg" alt="">
-    </article>
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="portafolioSlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="imagenes/1.png" alt="" style="width:100%">
+          </div>
+
+          <div class="portafolioSlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="imagenes/2.png" alt="" style="width:100%">
+          </div>
+
+          <div class="portafolioSlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="imagenes/3.png" alt="" style="width:100%">
+          </div>
+
+          <div class="portafolioSlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="imagenes/4.jpg" alt="" style="width:100%">
+          </div>
+
+          <div class="portafolioSlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="imagenes/1.png" alt="" style="width:100%">
+          </div>
+
+          <div class="portafolioSlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="imagenes/1.png" alt="" style="width:100%">
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="gallery">
+            <div class="column2">
+              <img class="demo" src="imagenes/1.png"onclick="currentSlide(1)" alt="">
+            </div>
+
+            <div class="column2">
+              <img class="demo" src="imagenes/2.png" onclick="currentSlide(2)" alt="">
+            </div>
+
+            <div class="column2">
+              <img class="demo" src="imagenes/3.png" onclick="currentSlide(3)" alt="">
+            </div>
+
+            <div class="column2">
+              <img class="demo" src="imagenes/4.jpg" onclick="currentSlide(4)" alt="">
+            </div>
+
+            <div class="column2">
+              <img class="demo" src="imagenes/1.png" onclick="currentSlide(5)" alt="">
+            </div>
+
+            <div class="column2">
+              <img class="demo" src="imagenes/1.png" onclick="currentSlide(6)" alt="">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="tituloservicios" class="fadein consult">
@@ -158,7 +225,7 @@
     </article>
 
     <article>
-      <img src="imagenes/1.png" alt="">
+      <img src="imagenes/1.png" alt="" style="width:100%">
     </article>
   </section>
 
@@ -169,7 +236,27 @@
 
   <section id="proyecto" class="fadein project">
     <article>
-      <img src="imagenes/2.png" alt="">
+      <section id="slideshow proyecto" class="fadein slideshow project" style="padding-bottom: 10px">
+        <div class="slideshow-container">
+          <div class="mySlides fade imgSlide">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://www.w3schools.com/w3css/img_nature_wide.jpg" class="imgSlide">
+            <div class="text">Caption one</div>
+          </div>
+
+          <div class="mySlides fade imgSlide">
+              <div class="numbertext">2 / 3</div>
+              <img src="https://www.w3schools.com/w3css/img_fjords_wide.jpg" class="imgSlide">
+              <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade imgSlide">
+              <div class="numbertext">3 / 3</div>
+              <img src="https://www.w3schools.com/w3css/img_mountains_wide.jpg" class="imgSlide">
+              <div class="text">Caption Three</div>
+          </div>
+        </div>
+      </section>
     </article>
 
     <article>
@@ -178,6 +265,36 @@
         laudantium consequatur, maxime quas ipsa voluptas, provident qui dolores libero suscipit quasi!</p>
     </article>
   </section>
+  
+<!-- Inicio del slideShow -->
+<!--
+<section id="slideshow proyecto" class="fadein slideshow project" style="padding-bottom: 10px">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%">
+        <div class="text">Caption one</div>
+      </div>
+
+      <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="https://www.w3schools.com/w3css/img_fjords_wide.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="https://www.w3schools.com/w3css/img_mountains_wide.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+      </div>
+      <article>
+      <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sed, porro quam culpa unde accusamus? Ratione veritatis tenetur 
+      explicabo facilis quidem, laboriosam corporis pariatur neque sapiente, animi atque praesentium consequuntur.</p>
+    </article>
+    </div>
+  </section> -->
+
+  <!-- Fin del slideshow -->
 
   <section id="tituloservicios" class="fadein contact">
     <h1>CONTACTANOS</h1>
@@ -230,7 +347,7 @@
 
       </article>
 
-      <article>
+      <article style="color: black;">
         <i class="fab fa-facebook-f icono"></i>
         <i class="fab fa-linkedin-in icono"></i>
         <i class="fab fa-twitter icono"></i>
@@ -244,7 +361,7 @@
       </article>
     </section>
 
-    <section id="derechos">
+    <section id="derechos" style="color: black; font-weight:900">
       <p>© JN SOLHE | All right reserved</p>
     </section>
 
@@ -269,7 +386,8 @@
 
 
   <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
+  <script src="js/portafolio.js"></script>
+  <script src="js/slideshow.js"></script>
   <script type="text/javascript">
 
     // The latitude and longitude of your business / place
