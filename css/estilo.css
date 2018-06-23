@@ -187,9 +187,15 @@ article .iconoservicio {
 }
 
 #clientes article {
+<<<<<<< HEAD
   width: 200px;
   height: 150px;
+=======
+  width: 250px;
+  height: 260px;
+>>>>>>> b67a8f8c970304caf810bcb4a58f950abb6aebdb
   overflow: hidden;
+  margin: 30px;
 }
 
 article figure img {
@@ -207,7 +213,11 @@ article .imgcli {
 article .imgcli:hover {
   filter: none;
   transition-duration: .3s;
+<<<<<<< HEAD
   transform: scale(1.3);
+=======
+  transform: scale(1.8);
+>>>>>>> b67a8f8c970304caf810bcb4a58f950abb6aebdb
   overflow: hidden;
 }
 
@@ -322,7 +332,11 @@ textarea {
 
 .redess {
   margin: 10px;
+<<<<<<< HEAD
   /*white-space: 100px; */
+=======
+  white-space: 100px;
+>>>>>>> b67a8f8c970304caf810bcb4a58f950abb6aebdb
   line-height: 100px;
 }
 
@@ -333,7 +347,11 @@ textarea {
 
 #descripcion {
   text-align: justify;
+<<<<<<< HEAD
  /* white-space: 1px; */
+=======
+  white-space: 1px;
+>>>>>>> b67a8f8c970304caf810bcb4a58f950abb6aebdb
   line-height: 30px;
   width: 70%;
   margin: auto;
@@ -365,11 +383,16 @@ footer {
   padding-top: 50px;
   background-image: url(../imagenes/footer.jpg);
   width: 100%;
+<<<<<<< HEAD
   height: 80%;
+=======
+  height: 60%;
+>>>>>>> b67a8f8c970304caf810bcb4a58f950abb6aebdb
   background-size: cover;
   position: absolute;
 }
 
+<<<<<<< HEAD
 .modal h1 {
   font-size: 20px;
   letter-spacing: 0px;
@@ -383,16 +406,29 @@ footer {
     z-index: 100; /* Sit on top */
     left: 0;
     padding: 5% 0%;
+=======
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+>>>>>>> b67a8f8c970304caf810bcb4a58f950abb6aebdb
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
+<<<<<<< HEAD
     background-color: rgba(0,0,0,.5); /* Black w/ opacity */
+=======
+    background-color: rgba(0,0,0,0); /* Black w/ opacity */
+>>>>>>> b67a8f8c970304caf810bcb4a58f950abb6aebdb
 }
 
 /* Modal Content/Box */
 .modal-content {
+<<<<<<< HEAD
   background-color: #fefefe;
   margin: auto; /* 15% from the top and centered */
   padding: 30px 20px;
@@ -405,18 +441,30 @@ footer {
   width: 90%;
   height: 30px;
   font-size: 14px;
+=======
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+>>>>>>> b67a8f8c970304caf810bcb4a58f950abb6aebdb
 }
 
 /* The Close Button */
 .close {
     color: #aaa;
     float: right;
+<<<<<<< HEAD
     font-size: 18px;
+=======
+    font-size: 28px;
+>>>>>>> b67a8f8c970304caf810bcb4a58f950abb6aebdb
     font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
+<<<<<<< HEAD
     color: red;
     text-decoration: none;
     cursor: pointer;
@@ -480,4 +528,21 @@ footer {
   font-size: 14px;
   border: none;
   vertical-align: middle; 
+=======
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#ultima{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#infofooter{
+  color: black;
+  font-weight: 900;
+}
+.hideContent {
+  display:none !important;
+>>>>>>> b67a8f8c970304caf810bcb4a58f950abb6aebdb
 }
