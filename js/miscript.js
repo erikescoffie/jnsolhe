@@ -14,9 +14,8 @@ $(document).ready(function () {
             var bannerCss = $('#banner').css('display');
             if (bannerCss != "none") {
                 $(".logo").removeClass("estilo");
-                $("header").css({ "background-color": "transparent" });
+                $("header").css({ "background-color": "black" });
                 //alert(flag);
-
             }
         }
     });
