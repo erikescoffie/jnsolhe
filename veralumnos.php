@@ -5,13 +5,18 @@ include 'conectar.php';
 
 if(isset($_SESSION['correo'])) {?>
 
+<<<<<<< HEAD
 
 
 <!DOCTYPE html>
+=======
+  <!DOCTYPE html>
+>>>>>>> 44ccdcb7691a27fb82c50a669cde286882fdb9ba
 <html>
       <head>
       <title></title>
       <meta charset="utf-8">
+<<<<<<< HEAD
       <title></title>
       <meta charset="utf-8">
       <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
@@ -42,6 +47,14 @@ if(isset($_SESSION['correo'])) {?>
 </section>
 
 <h1 class="titu">TUS DATOS</h1>
+=======
+      <link rel="stylesheet" href="consulta.css">
+      <link rel="stylesheet" href="estilocabecera.css">
+      <link rel="stylesheet" href="cabecerabtnizq.css">
+      <link href="https://fonts.googleapis.com/css?family=Abel|Oswald" rel="stylesheet">
+</head>
+<body>
+>>>>>>> 44ccdcb7691a27fb82c50a669cde286882fdb9ba
   
   <?php 
 
@@ -53,11 +66,26 @@ if(isset($_SESSION['correo'])) {?>
 
   ?>
 
+<<<<<<< HEAD
+=======
+<center>
+      <table id='tabla' cellspacing='5'>
+<tr  align='center'>
+      
+  <th>Nombre</th>
+  <th>Empresa</th>
+  <th>Telefono</th>
+  <th>Correo</th>
+  <th colspan='2'>MOVIMIENTOS</th>
+</tr>
+
+>>>>>>> 44ccdcb7691a27fb82c50a669cde286882fdb9ba
   <?php 
     while ($registro = $resp -> fetch_array(MYSQLI_BOTH))
       {
   ?>
 
+<<<<<<< HEAD
 </table>
 <center>
 <table>
@@ -95,11 +123,32 @@ if(isset($_SESSION['correo'])) {?>
 <?php 
     }
   ?>
+=======
+  <tr>
+    <td><?php echo $registro['nombre'] ?></td>
+      <td><?php echo $registro['nombreempresa'] ?></td>
+      <td><?php echo $registro['telefono'] ?></td>
+      <td><?php echo $registro['correo'] ?></td>
+    
+    <td><a href="editaralumno.php?editar=1&correo=<?php echo $registro['correo']; ?>">Editar</a></td> 
+  </tr>
+
+    <?php 
+      }
+   ?>
+
+</table>
+</center>
+>>>>>>> 44ccdcb7691a27fb82c50a669cde286882fdb9ba
 </body>
 </html>
 
 <?php
 }else{
+<<<<<<< HEAD
   echo '<script> window.location="index.php"; </script>';
+=======
+  echo '<script> window.location="inicioadministrador.php"; </script>';
+>>>>>>> 44ccdcb7691a27fb82c50a669cde286882fdb9ba
 }
 ?>

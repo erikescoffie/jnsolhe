@@ -9,7 +9,11 @@ if(isset($_SESSION['correo'])) {?>
 	<head>
 	<title></title>
 	<meta charset="utf-8">
+<<<<<<< HEAD
   <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+=======
+<<<<<<< HEAD
+>>>>>>> 44ccdcb7691a27fb82c50a669cde286882fdb9ba
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <link rel="stylesheet" href="css/estilo.css" />
   <link rel="stylesheet" href="css/estilomovil.css"/>
@@ -43,6 +47,18 @@ if(isset($_SESSION['correo'])) {?>
     <a id="btnvp" href="logout.php">Cerrar Sesión</a>
   </article>
 </section>
+<<<<<<< HEAD
+=======
+=======
+</head>
+<body>
+<header>
+  <div>
+    <a href="logout.php">Cerrar Sesión</a>
+  </div>
+</header>
+>>>>>>> b67a8f8c970304caf810bcb4a58f950abb6aebdb
+>>>>>>> 44ccdcb7691a27fb82c50a669cde286882fdb9ba
 			
 <center>
 	 <section>
@@ -57,7 +73,11 @@ if(isset($_SESSION['correo'])) {?>
 ?>
 
 <center>
+<<<<<<< HEAD
   <table border="1">
+=======
+  <table>
+>>>>>>> 44ccdcb7691a27fb82c50a669cde286882fdb9ba
     <tr>   
       <th>PROYECTO</th>
       <th>DOCUMENTACION</th>
