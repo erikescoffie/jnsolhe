@@ -9,7 +9,15 @@ if(isset($_SESSION['correo'])) {?>
 	<head>
 	<title></title>
 	<meta charset="utf-8">
+<<<<<<< HEAD
   <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+=======
+<<<<<<< HEAD
+  <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+=======
+<<<<<<< HEAD
+>>>>>>> 44ccdcb7691a27fb82c50a669cde286882fdb9ba
+>>>>>>> 6f4a49fe3e718aa8dc6a30d19aa7baeaf32b6667
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <link rel="stylesheet" href="css/estilo.css" />
   <link rel="stylesheet" href="css/estilomovil.css"/>
@@ -39,6 +47,7 @@ if(isset($_SESSION['correo'])) {?>
   </article>
 
   <article>
+<<<<<<< HEAD
     <a id="btnvp" href="verDatos.php">Ver datos</a> 
     <a id="btnvp" href="logout.php">Cerrar Sesión</a>
   </article>
@@ -47,6 +56,28 @@ if(isset($_SESSION['correo'])) {?>
 <center>
 	 <section>
     <h1 class="titu">BIENVENIDOS</h1>
+=======
+    <a id="btnvp" href="veralumnos.php">Ver datos</a> 
+    <a id="btnvp" href="logout.php">Cerrar Sesión</a>
+  </article>
+</section>
+<<<<<<< HEAD
+=======
+=======
+</head>
+<body>
+<header>
+  <div>
+    <a href="logout.php">Cerrar Sesión</a>
+  </div>
+</header>
+>>>>>>> b67a8f8c970304caf810bcb4a58f950abb6aebdb
+>>>>>>> 44ccdcb7691a27fb82c50a669cde286882fdb9ba
+			
+<center>
+	 <section>
+    <h1>BIENVENIDO</h1>
+>>>>>>> 6f4a49fe3e718aa8dc6a30d19aa7baeaf32b6667
   </section>
 </center>
 
@@ -57,7 +88,15 @@ if(isset($_SESSION['correo'])) {?>
 ?>
 
 <center>
+<<<<<<< HEAD
   <table border="1">
+=======
+<<<<<<< HEAD
+  <table border="1">
+=======
+  <table>
+>>>>>>> 44ccdcb7691a27fb82c50a669cde286882fdb9ba
+>>>>>>> 6f4a49fe3e718aa8dc6a30d19aa7baeaf32b6667
     <tr>   
       <th>PROYECTO</th>
       <th>DOCUMENTACION</th>
@@ -69,7 +108,11 @@ if(isset($_SESSION['correo'])) {?>
       ?>
 
     <tr>
+<<<<<<< HEAD
       <td><?php echo $registro['nombrePro'] ?></td>
+=======
+      <td><?php echo $registro['proyecto'] ?></td>
+>>>>>>> 6f4a49fe3e718aa8dc6a30d19aa7baeaf32b6667
       <td><?php echo $registro['archivos'] ?></td>
     </tr>
 

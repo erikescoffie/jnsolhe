@@ -32,8 +32,12 @@ $resultado = $conexion -> query($consulta) || die ("Ha occurrido un error al gua
 
 if($resultado)
 	{
+<<<<<<< HEAD
 		echo '<p>La información se guardo correctamente.<p>';
 		echo '<META HTTP-EQUIV=Refresh CONTENT="1; URL=index.php">';
+=======
+		echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=index.php">';
+>>>>>>> 6f4a49fe3e718aa8dc6a30d19aa7baeaf32b6667
 	}
 }
 ?>

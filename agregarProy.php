@@ -12,6 +12,7 @@
 </head>
 <body>
 
+<<<<<<< HEAD
 <section id="footervp">
   <article>
     
@@ -39,13 +40,29 @@
            <input id="inputAdmi" type="text" name="archivos" placeholder="Archivos"><br><br><br>
 
           <?php 
+=======
+
+      <div id="caja">      
+        <form method="POST" action="insertarProy.php" ><br><br>
+
+           <label>archivos:</label>
+           <input id="tamañotxt" type="text" name="archivos" placeholder="Ingresa Nombre"><br><br><br>
+
+
+           <?php 
+>>>>>>> 6f4a49fe3e718aa8dc6a30d19aa7baeaf32b6667
                 include ("conectar.php");
                 $sql2=("SELECT correo FROM usuarios");
                 $resp2=$conexion -> query($sql2);
               ?>
 
+<<<<<<< HEAD
            
             <select id="" name='correo'> 
+=======
+           <label>Correo:</label>
+            <select id="tamañotxt" name='correo'> 
+>>>>>>> 6f4a49fe3e718aa8dc6a30d19aa7baeaf32b6667
               <?php 
                 while ($registro2 = $resp2 -> fetch_array(MYSQLI_BOTH))
                   {
@@ -59,15 +76,23 @@
 
             </select><br><br><br>
 
+<<<<<<< HEAD
            
            <input id="inputAdmi" type="text" name="nombrePro" placeholder="Nombre del proyecto"><br><br><br>
+=======
+           <label>nombrePro:</label>
+           <input id="tamañotxt" type="text" name="nombrePro" placeholder="Ingresa Nombre"><br><br><br>
+>>>>>>> 6f4a49fe3e718aa8dc6a30d19aa7baeaf32b6667
            
            
           
            
           <input id="bombon2" type="submit" name="" value="Registrar" size="0"> 
         </form>
+<<<<<<< HEAD
         </center>
+=======
+>>>>>>> 6f4a49fe3e718aa8dc6a30d19aa7baeaf32b6667
 	
 </body>
 </html>

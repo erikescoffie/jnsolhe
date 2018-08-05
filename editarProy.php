@@ -58,14 +58,21 @@
 			} 
 				else
 			{
+<<<<<<< HEAD
 				echo "verProy.php";
+=======
+				echo "verProyectos.php";
+>>>>>>> 6f4a49fe3e718aa8dc6a30d19aa7baeaf32b6667
 			}   
 		?> ">
 
         <tr>
         	
+<<<<<<< HEAD
 
         	<input type="hidden" name="correo" value="<?php echo $_GET['correo']; ?>">
+=======
+>>>>>>> 6f4a49fe3e718aa8dc6a30d19aa7baeaf32b6667
         	<td> <label id="labelver" for="">Nombre proyecto:</label> </td>
         	<td> <input id="inputver" type="text" name="nombrePro" placeholder="Nombre" value="<?php echo $registro['nombrePro'];?>"><br><br> </td>
         </tr>
